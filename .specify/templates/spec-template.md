@@ -95,6 +95,28 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### Quality & Consistency Requirements *(mandatory)*
+
+- **QR-001**: Changes MUST satisfy project code quality gates (readability, bounded
+  responsibilities, lint/type cleanliness).
+- **QR-002**: User-facing behavior MUST be consistent with established UX patterns for
+  similar actions, including validation and error handling.
+- **QR-003**: Any intentional UX deviation MUST be explicitly documented with rationale.
+
+### Testing Requirements *(mandatory)*
+
+- **TR-001**: The feature MUST define required automated test coverage levels (unit,
+  integration, and contract/end-to-end where interfaces change).
+- **TR-002**: Acceptance criteria MUST map to executable tests.
+- **TR-003**: Test strategy MUST include how fail-then-pass validation will be evidenced.
+
+### Performance Requirements *(mandatory)*
+
+- **PR-001**: The feature MUST define measurable performance targets for critical paths.
+- **PR-002**: The feature MUST define how performance verification will be executed.
+- **PR-003**: If no performance impact is expected, the spec MUST state that explicitly and
+  justify why.
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]
